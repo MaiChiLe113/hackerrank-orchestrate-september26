@@ -1,0 +1,10 @@
+table,rows,blank_cells,duplicate_primary_ids
+exchange_rates,134,0,
+financial_events,25342,47745,0.0
+financial_profiles,275,220,0.0
+images,16,0,0.0
+messages,215,263,0.0
+output,250,1750,
+request_payment_options,790,275,0.0
+requests,250,0,0.0
+sample_requests,25,7,0.0

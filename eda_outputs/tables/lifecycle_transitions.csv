@@ -1,0 +1,6 @@
+previous_status,status,rows
+cancelled,settled,7
+failed,scheduled,7
+settled,pending,13
+settled,settled,17
+settled,unrealized,8

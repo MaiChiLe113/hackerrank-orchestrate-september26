@@ -20,6 +20,32 @@ Read [`problem_statement.md`](./problem_statement.md) for the full task spec, in
 
 ## Quick Start
 
+### Reproducible EDA (implemented)
+
+Use Python 3.13. Create an environment and install the pinned analysis dependencies:
+
+```powershell
+python -m venv .venv
+.venv\Scripts\python.exe -m pip install -r requirements-eda.txt
+.venv\Scripts\python.exe plan/run_eda.py
+```
+
+On macOS/Linux:
+
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements-eda.txt
+.venv/bin/python plan/run_eda.py
+```
+
+Activation is optional when using these explicit interpreter paths. This checkout initially reused installed packages with `--system-site-packages`; the commands above create a standalone environment for a fresh setup.
+
+Open [the executed EDA notebook](plan/eda.ipynb) in a notebook viewer. It includes 13 plots, computed observations, architecture implications, chronological recurrence backtests, and evidence triage. The runner regenerates and executes the notebook; keep reusable analysis edits in `plan/eda_analysis.py` and notebook structure edits in `plan/run_eda.py`.
+
+Exports: `eda_outputs/figures/`, `eda_outputs/tables/`, [machine-readable summary](eda_outputs/eda_summary.json), and [generated findings](eda_outputs/eda_findings.md). Re-running replaces generated artifacts and leaves `dataset/` unchanged. No credentials or network calls are needed after dependency installation. The notebook uses the runner's Python interpreter.
+
+EDA is descriptive: complexity tiers are declared triage rules, message tags are provisional, and recurrence winners are historical one-step baselines. Full evidence normalization, 90-day simulation, and prediction generation remain subsequent stages in [the project plan](plan/plan.md). The starter prediction entry point is not yet a completed financial agent.
+
 Clone the repository and move into the project directory:
 
 ```bash

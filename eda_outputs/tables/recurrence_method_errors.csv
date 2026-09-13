@@ -1,0 +1,8 @@
+kind,method,mean_error,series,folds
+amount,historical_median,0.08973728002291421,3022,6122
+amount,last_amount,0.10043383790636207,3022,6122
+amount,trailing_3_median,0.09159331739376536,3022,6122
+date,calendar_month,8.936871408611978,3022,6122
+date,fixed_30,8.710258895086824,3022,6122
+date,last_interval,13.34219112749887,3022,6122
+date,median_interval,11.414965057829882,3022,6122

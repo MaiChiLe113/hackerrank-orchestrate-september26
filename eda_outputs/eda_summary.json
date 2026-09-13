@@ -1,0 +1,1255 @@
+{
+  "schema_version": "1.0",
+  "population": {
+    "request_analyses": "250 evaluation requests; no sample output labels used",
+    "supporting_analyses": "evaluation users unless explicitly labeled all supplied rows",
+    "recurrence": "settled cash events with settlement date strictly before request date",
+    "evidence": "metadata and provisional keyword triage; not normalized facts"
+  },
+  "input_sha256": {
+    "dataset\\exchange_rates.csv": "ff56e9feb482f909837dc309f52f8de5b167d9d6685a2ee8e8fd807639658a04",
+    "dataset\\financial_events.csv": "b6c3f43a8ad3a80ca11c72cce6f2818eea06621a3582d2851886fd9127b1229d",
+    "dataset\\financial_profiles.csv": "fa173608f8ec99c8d9d633eace762695aeaa2d276a509989f0edd8e123c07964",
+    "dataset\\images.csv": "6b5428565ca98e4b71e182f8a8fa3fd3013727399bdea847f3e4a3d2c129dfc9",
+    "dataset\\media\\images\\image_01.png": "f37b40e6af42c664846057252cac89ad41b7d029dfe8dacff2db8cceb79fa5ba",
+    "dataset\\media\\images\\image_02.png": "ccd779e5382b1bcfacfb47d4ccf346ffd667a34c8b94d0cfd48aa4a609bd117d",
+    "dataset\\media\\images\\image_03.png": "e5fb0bbcda6cc06f8ea95e32e45d4c76acd8c594f4b02ff0d78e6006e103ee4d",
+    "dataset\\media\\images\\image_04.png": "281e7f1e7bd1f98fbd53cde1381977373e610e6634b11c98098000001ff10f0c",
+    "dataset\\media\\images\\image_05.png": "9abcda5647afb3dcdf91613253ac0160bd722333af33a4b952dfc96fea6ff97b",
+    "dataset\\media\\images\\image_06.png": "9055551fbe5940feb01b947e1f18ccfed093192d103b1e930a56df0ea7cd3cb4",
+    "dataset\\media\\images\\image_07.png": "f6d30a74355224c0b5cda2d7f96399a7b1a0afe4f9fe59ea048bbecb1a21311e",
+    "dataset\\media\\images\\image_08.png": "e28592ad8b4dacd03055e0b1ebc46670c83fbfa1162af07bdef33bb226bf63c8",
+    "dataset\\media\\images\\image_09.png": "e0e74e14425d923ff8a5c6db26ec6f4f26ee4697bfd257e414ba05c947a75ba8",
+    "dataset\\media\\images\\image_10.png": "c90f98caf0877083e471fd47dace772f83d4782037cf112e97c63f79a10ea8cf",
+    "dataset\\media\\images\\image_11.png": "795e000d48428c97748e8af370cb02b604bec88cc52ec8930f38dc744624e886",
+    "dataset\\media\\images\\image_12.png": "e10b0123e66d512d82f6c431fb741053b336627b89b9d9a138071ac6980a14ff",
+    "dataset\\media\\images\\image_13.png": "1ae54b378a9556d94b753093ba80e7117caf86fab4d3fe11ec84e3dd2f6d6dd8",
+    "dataset\\media\\images\\image_14.png": "bf88e4aa35e6f36304cbf76bf6f505f32b04466bfd5f7df693fcb3ebe8a3e2c1",
+    "dataset\\media\\images\\image_15.png": "0c0fe3d79e670f2b423bbb2aafc0b5601d3eb4e659ac64058cd189abf7792ee1",
+    "dataset\\media\\images\\image_16.png": "2665cf731a861ddb217be5b8082fbd390850a7a98feec018519b6fda0b30b4f8",
+    "dataset\\messages.csv": "7b9db27a4546a850a76d3475ebf65de80fb9fe374e26d469586f62f537eac9a6",
+    "dataset\\output.csv": "e6e6f4aae1eed6d1c178fd3daca7b5ad82cc9c1461650969c373b4dedab43baf",
+    "dataset\\request_payment_options.csv": "4922c56f10c06698d24b86b8a43580cbc6bc6ee44c95936c3037878005980c40",
+    "dataset\\requests.csv": "13663d50b7098b28a8c087a02eb085041260999707adade5230d29f1c2e6595d",
+    "dataset\\sample_requests.csv": "117bf2ab9e5f0054bae48afe8506f5daa35929559cb771f2c27dd4fe18da62f6"
+  },
+  "versions": {
+    "python": "3.13.5",
+    "pandas": "3.0.1",
+    "numpy": "2.4.3",
+    "matplotlib": "3.10.8"
+  },
+  "sections": {
+    "integrity": {
+      "statistics": {
+        "inventory": [
+          {
+            "table": "exchange_rates",
+            "rows": 134,
+            "blank_cells": 0,
+            "duplicate_primary_ids": null
+          },
+          {
+            "table": "financial_events",
+            "rows": 25342,
+            "blank_cells": 47745,
+            "duplicate_primary_ids": 0.0
+          },
+          {
+            "table": "financial_profiles",
+            "rows": 275,
+            "blank_cells": 220,
+            "duplicate_primary_ids": 0.0
+          },
+          {
+            "table": "images",
+            "rows": 16,
+            "blank_cells": 0,
+            "duplicate_primary_ids": 0.0
+          },
+          {
+            "table": "messages",
+            "rows": 215,
+            "blank_cells": 263,
+            "duplicate_primary_ids": 0.0
+          },
+          {
+            "table": "output",
+            "rows": 250,
+            "blank_cells": 1750,
+            "duplicate_primary_ids": null
+          },
+          {
+            "table": "request_payment_options",
+            "rows": 790,
+            "blank_cells": 275,
+            "duplicate_primary_ids": 0.0
+          },
+          {
+            "table": "requests",
+            "rows": 250,
+            "blank_cells": 0,
+            "duplicate_primary_ids": 0.0
+          },
+          {
+            "table": "sample_requests",
+            "rows": 25,
+            "blank_cells": 7,
+            "duplicate_primary_ids": 0.0
+          }
+        ],
+        "orphans": {
+          "user_id": 0,
+          "request_id": 0,
+          "related_event_id": 0,
+          "linked_event_id": 0
+        },
+        "missing_amounts": 16,
+        "missing_amounts_with_image": 16,
+        "output_ids_match": true
+      },
+      "observations": [
+        "The supplied tables contain 250 evaluation requests and 25 samples; evaluation users contribute 23,054 events.",
+        "Primary-key duplicates total 0; unresolved populated foreign keys total 0.",
+        "All-data missing amounts: 16; 16 have existing linked PNGs. Their numeric values are still unextracted."
+      ],
+      "implications": [
+        [
+          "DETERMINISTIC",
+          "Validate identifiers, typed fields and joins at ingestion; preserve blank amounts until evidence resolves them."
+        ],
+        [
+          "LLM_REQUIRED",
+          "Image-backed amounts need visual interpretation, including selecting the correct monetary field; EDA does not prove an LLM is the only possible extractor."
+        ]
+      ]
+    },
+    "request_types": {
+      "statistics": {
+        "family_transfer": 28,
+        "purchase": 28,
+        "investment": 28,
+        "debt_repayment": 28,
+        "travel": 28,
+        "housing": 28,
+        "education": 28,
+        "emergency_expense": 27,
+        "other": 27
+      },
+      "observations": [
+        "Type counts range from 27 to 28 across 9 types.",
+        "Largest type share is 11.2%; no single type dominates the evaluation population."
+      ],
+      "implications": [
+        [
+          "DETERMINISTIC",
+          "Apply the same safety constraints across all request types; do not infer affordability from type frequency."
+        ]
+      ]
+    },
+    "amount_headroom": {
+      "statistics": {
+        "by_currency": [
+          {
+            "home_currency": "EUR",
+            "count": 54,
+            "min": 271.7,
+            "median": 1423.4,
+            "max": 3537.6
+          },
+          {
+            "home_currency": "IDR",
+            "count": 50,
+            "min": 2191000.0,
+            "median": 21584000.0,
+            "max": 83923000.0
+          },
+          {
+            "home_currency": "INR",
+            "count": 60,
+            "min": 22200.0,
+            "median": 115500.0,
+            "max": 553000.0
+          },
+          {
+            "home_currency": "USD",
+            "count": 39,
+            "min": 199.89,
+            "median": 1699.2,
+            "max": 5059.2
+          },
+          {
+            "home_currency": "ZAR",
+            "count": 47,
+            "min": 2560.0,
+            "median": 29062.0,
+            "max": 124278.0
+          }
+        ],
+        "nonpositive_headroom": 0,
+        "ratio_quantiles": {
+          "0.25": 0.5618340300849549,
+          "0.5": 0.8773220415257257,
+          "0.75": 1.7754374319927877,
+          "0.95": 5.5740360949680055,
+          "1.0": 9.266666666666667
+        },
+        "ratio_above_one": 111
+      },
+      "observations": [
+        "250 requests have positive headroom; 0 have zero or negative headroom and are excluded from ratios.",
+        "111/250 (44.4%) requests exceed raw headroom; median ratio is 0.88, 95th percentile 5.57.",
+        "Within-currency max/median request ratios range from 2.5 to 4.8."
+      ],
+      "implications": [
+        [
+          "DETERMINISTIC",
+          "Raw headroom is balance minus reserve, not 90-day safe spending. Do not mix native currency amounts."
+        ],
+        [
+          "STATISTICAL",
+          "Forecast commitments before interpreting a low request/headroom ratio as affordable."
+        ]
+      ]
+    },
+    "deadlines": {
+      "statistics": {
+        "quantiles": {
+          "0.0": 6.0,
+          "0.25": 37.25,
+          "0.5": 65.0,
+          "0.75": 72.0,
+          "1.0": 86.0
+        },
+        "within_30_days": 55
+      },
+      "observations": [
+        "Deadlines span 6\u201386 days; median 65 days.",
+        "55/250 (22.0%) must complete within 30 days."
+      ],
+      "implications": [
+        [
+          "DETERMINISTIC",
+          "Compute completion eligibility using each request date and deadline, independently of the forecast horizon."
+        ]
+      ]
+    },
+    "preferences": {
+      "statistics": {
+        "combinations": {
+          "full_payment": 54,
+          "partial_payment|installments": 48,
+          "full_payment|partial_payment": 38,
+          "installments": 38,
+          "full_payment|installments": 33,
+          "full_payment|partial_payment|installments": 23,
+          "partial_payment": 16
+        },
+        "single_method": 108,
+        "restricted": 227,
+        "partial_allowed": 80
+      },
+      "observations": [
+        "227/250 (90.8%) users exclude at least one immediate payment method.",
+        "108 users (43.2%) accept exactly one method; request-level partial permission still needs a separate check."
+      ],
+      "implications": [
+        [
+          "DETERMINISTIC",
+          "Filter payment candidates by user acceptance before ranking; financial capacity and method eligibility are distinct."
+        ]
+      ]
+    },
+    "event_status": {
+      "statistics": {
+        "settled": 22883,
+        "scheduled": 62,
+        "pending": 62,
+        "cancelled": 20,
+        "failed": 19,
+        "unrealized": 8
+      },
+      "observations": [
+        "Settled rows account for 22883/23054 (99.3%) evaluation-user events.",
+        "There are 62 pending and 8 unrealized rows; these require different cash treatment despite their small frequency."
+      ],
+      "implications": [
+        [
+          "DETERMINISTIC",
+          "Reserve pending debits; exclude pending credits and unrealized value from available cash. Failed collections may leave liabilities."
+        ]
+      ]
+    },
+    "event_types": {
+      "statistics": {
+        "types": {
+          "expense": 18677,
+          "subscription": 2261,
+          "income": 1543,
+          "debt_payment": 516,
+          "investment_purchase": 25,
+          "refund": 19,
+          "investment_valuation": 8,
+          "investment_sale": 5
+        },
+        "categories": {
+          "groceries": 5264,
+          "transport": 5137,
+          "dining": 3201,
+          "salary": 1538,
+          "utilities": 1320,
+          "rent": 1232,
+          "cloud_storage": 757,
+          "shopping": 742,
+          "streaming": 637,
+          "debt_repayment": 502,
+          "entertainment": 471,
+          "insurance": 419,
+          "music_subscription": 406,
+          "healthcare": 314,
+          "delivery_membership": 311,
+          "education": 270,
+          "housing": 223,
+          "gym": 150,
+          "family_support": 105,
+          "investment": 38,
+          "work_expense": 12,
+          "windfall": 5
+        }
+      },
+      "observations": [
+        "expense contributes 18,677 events (81.0%).",
+        "The three most frequent categories (groceries, transport, dining) account for 59.0% of events."
+      ],
+      "implications": [
+        [
+          "STATISTICAL",
+          "Recurring obligations and essential variable spending need separate estimation; an expense type does not establish recurrence."
+        ]
+      ]
+    },
+    "event_counts": {
+      "statistics": {
+        "count": 250.0,
+        "mean": 92.216,
+        "std": 19.97330909752365,
+        "min": 56.0,
+        "25%": 75.0,
+        "50%": 98.0,
+        "75%": 104.0,
+        "max": 129.0
+      },
+      "observations": [
+        "Users have 56\u2013129 rows; median 98, IQR 75\u2013104.",
+        "60 users exceed the upper-quartile event count; row volume alone is not evidence complexity."
+      ],
+      "implications": [
+        [
+          "DETERMINISTIC",
+          "Retrieve and process per-user histories; avoid sending the entire event table to an interpreter."
+        ]
+      ]
+    },
+    "recurrence_intervals": {
+      "statistics": {
+        "series": 3022,
+        "users": 250,
+        "intervals": 12166,
+        "monthly_share": 0.6469225678358703,
+        "weekly_share": 0.013898080741230973,
+        "iqr_above_7_share": 0.3954334877564527,
+        "same_day_aggregation": "sum within exact grouping, min_count=1"
+      },
+      "observations": [
+        "3022 candidates across 250 users have at least four distinct historical settlement dates.",
+        "64.7% have median intervals of 28\u201332 days; 1.4% fall in 6\u20138 days.",
+        "1195 (39.5%) have interval IQR above seven days; description-based groups are candidates, not confirmed obligations."
+      ],
+      "implications": [
+        [
+          "STATISTICAL",
+          "Infer cadence from history rather than assuming 30 days. Different descriptions may fragment one obligation; one description may merge multiple obligations."
+        ]
+      ]
+    },
+    "recurrence_amounts": {
+      "statistics": {
+        "cv_quantiles": {
+          "0.0": 0.0,
+          "0.5": 0.06369536825189201,
+          "0.75": 0.13457730909792764,
+          "0.95": 0.18927628365078059,
+          "1.0": 0.44233236035067686
+        },
+        "cv_above_025": 7,
+        "cv_missing": 0
+      },
+      "observations": [
+        "Median amount CV is 0.064; 95th percentile is 0.189.",
+        "7/3022 measurable series exceed CV 0.25; 0 have undefined CV."
+      ],
+      "implications": [
+        [
+          "STATISTICAL",
+          "Compare robust amount estimators; point-error accuracy alone does not guarantee conservative expense reserves."
+        ]
+      ]
+    },
+    "recurrence_backtest": {
+      "statistics": {
+        "metrics": [
+          {
+            "kind": "amount",
+            "method": "historical_median",
+            "mean_error": 0.08973728002291421,
+            "series": 3022,
+            "folds": 6122
+          },
+          {
+            "kind": "amount",
+            "method": "last_amount",
+            "mean_error": 0.10043383790636207,
+            "series": 3022,
+            "folds": 6122
+          },
+          {
+            "kind": "amount",
+            "method": "trailing_3_median",
+            "mean_error": 0.09159331739376536,
+            "series": 3022,
+            "folds": 6122
+          },
+          {
+            "kind": "date",
+            "method": "calendar_month",
+            "mean_error": 8.936871408611978,
+            "series": 3022,
+            "folds": 6122
+          },
+          {
+            "kind": "date",
+            "method": "fixed_30",
+            "mean_error": 8.710258895086824,
+            "series": 3022,
+            "folds": 6122
+          },
+          {
+            "kind": "date",
+            "method": "last_interval",
+            "mean_error": 13.34219112749887,
+            "series": 3022,
+            "folds": 6122
+          },
+          {
+            "kind": "date",
+            "method": "median_interval",
+            "mean_error": 11.414965057829882,
+            "series": 3022,
+            "folds": 6122
+          }
+        ],
+        "breakdown": [
+          {
+            "kind": "amount",
+            "method": "historical_median",
+            "direction": "credit",
+            "cadence": "monthly_candidate",
+            "mean_error": 0.0405893436850141,
+            "series": 204
+          },
+          {
+            "kind": "amount",
+            "method": "historical_median",
+            "direction": "credit",
+            "cadence": "other",
+            "mean_error": 0.2027878998292695,
+            "series": 24
+          },
+          {
+            "kind": "amount",
+            "method": "historical_median",
+            "direction": "debit",
+            "cadence": "monthly_candidate",
+            "mean_error": 0.04733669851080501,
+            "series": 1751
+          },
+          {
+            "kind": "amount",
+            "method": "historical_median",
+            "direction": "debit",
+            "cadence": "other",
+            "mean_error": 0.16843221552858237,
+            "series": 1001
+          },
+          {
+            "kind": "amount",
+            "method": "historical_median",
+            "direction": "debit",
+            "cadence": "weekly_candidate",
+            "mean_error": 0.15599327821597342,
+            "series": 42
+          },
+          {
+            "kind": "amount",
+            "method": "last_amount",
+            "direction": "credit",
+            "cadence": "monthly_candidate",
+            "mean_error": 0.037239730135882776,
+            "series": 204
+          },
+          {
+            "kind": "amount",
+            "method": "last_amount",
+            "direction": "credit",
+            "cadence": "other",
+            "mean_error": 0.23535694717545264,
+            "series": 24
+          },
+          {
+            "kind": "amount",
+            "method": "last_amount",
+            "direction": "debit",
+            "cadence": "monthly_candidate",
+            "mean_error": 0.05204062006341529,
+            "series": 1751
+          },
+          {
+            "kind": "amount",
+            "method": "last_amount",
+            "direction": "debit",
+            "cadence": "other",
+            "mean_error": 0.19090334300571893,
+            "series": 1001
+          },
+          {
+            "kind": "amount",
+            "method": "last_amount",
+            "direction": "debit",
+            "cadence": "weekly_candidate",
+            "mean_error": 0.19162415222215215,
+            "series": 42
+          },
+          {
+            "kind": "amount",
+            "method": "trailing_3_median",
+            "direction": "credit",
+            "cadence": "monthly_candidate",
+            "mean_error": 0.04056055801999245,
+            "series": 204
+          },
+          {
+            "kind": "amount",
+            "method": "trailing_3_median",
+            "direction": "credit",
+            "cadence": "other",
+            "mean_error": 0.2050786053697561,
+            "series": 24
+          },
+          {
+            "kind": "amount",
+            "method": "trailing_3_median",
+            "direction": "debit",
+            "cadence": "monthly_candidate",
+            "mean_error": 0.048759998146142056,
+            "series": 1751
+          },
+          {
+            "kind": "amount",
+            "method": "trailing_3_median",
+            "direction": "debit",
+            "cadence": "other",
+            "mean_error": 0.17127437168446874,
+            "series": 1001
+          },
+          {
+            "kind": "amount",
+            "method": "trailing_3_median",
+            "direction": "debit",
+            "cadence": "weekly_candidate",
+            "mean_error": 0.16129433307043722,
+            "series": 42
+          },
+          {
+            "kind": "date",
+            "method": "calendar_month",
+            "direction": "credit",
+            "cadence": "monthly_candidate",
+            "mean_error": 1.3267973856209152,
+            "series": 204
+          },
+          {
+            "kind": "date",
+            "method": "calendar_month",
+            "direction": "credit",
+            "cadence": "other",
+            "mean_error": 13.937003968253968,
+            "series": 24
+          },
+          {
+            "kind": "date",
+            "method": "calendar_month",
+            "direction": "debit",
+            "cadence": "monthly_candidate",
+            "mean_error": 2.6764610698648394,
+            "series": 1751
+          },
+          {
+            "kind": "date",
+            "method": "calendar_month",
+            "direction": "debit",
+            "cadence": "other",
+            "mean_error": 20.75946117374689,
+            "series": 1001
+          },
+          {
+            "kind": "date",
+            "method": "calendar_month",
+            "direction": "debit",
+            "cadence": "weekly_candidate",
+            "mean_error": 22.270634920634922,
+            "series": 42
+          },
+          {
+            "kind": "date",
+            "method": "fixed_30",
+            "direction": "credit",
+            "cadence": "monthly_candidate",
+            "mean_error": 1.8300653594771241,
+            "series": 204
+          },
+          {
+            "kind": "date",
+            "method": "fixed_30",
+            "direction": "credit",
+            "cadence": "other",
+            "mean_error": 14.790079365079364,
+            "series": 24
+          },
+          {
+            "kind": "date",
+            "method": "fixed_30",
+            "direction": "debit",
+            "cadence": "monthly_candidate",
+            "mean_error": 2.8805730059013896,
+            "series": 1751
+          },
+          {
+            "kind": "date",
+            "method": "fixed_30",
+            "direction": "debit",
+            "cadence": "other",
+            "mean_error": 19.4661457590029,
+            "series": 1001
+          },
+          {
+            "kind": "date",
+            "method": "fixed_30",
+            "direction": "debit",
+            "cadence": "weekly_candidate",
+            "mean_error": 25.347902494331066,
+            "series": 42
+          },
+          {
+            "kind": "date",
+            "method": "last_interval",
+            "direction": "credit",
+            "cadence": "monthly_candidate",
+            "mean_error": 2.505718954248366,
+            "series": 204
+          },
+          {
+            "kind": "date",
+            "method": "last_interval",
+            "direction": "credit",
+            "cadence": "other",
+            "mean_error": 20.776587301587302,
+            "series": 24
+          },
+          {
+            "kind": "date",
+            "method": "last_interval",
+            "direction": "debit",
+            "cadence": "monthly_candidate",
+            "mean_error": 5.408804492670855,
+            "series": 1751
+          },
+          {
+            "kind": "date",
+            "method": "last_interval",
+            "direction": "debit",
+            "cadence": "other",
+            "mean_error": 28.428068756640187,
+            "series": 1001
+          },
+          {
+            "kind": "date",
+            "method": "last_interval",
+            "direction": "debit",
+            "cadence": "weekly_candidate",
+            "mean_error": 32.928174603174604,
+            "series": 42
+          },
+          {
+            "kind": "date",
+            "method": "median_interval",
+            "direction": "credit",
+            "cadence": "monthly_candidate",
+            "mean_error": 2.065767973856209,
+            "series": 204
+          },
+          {
+            "kind": "date",
+            "method": "median_interval",
+            "direction": "credit",
+            "cadence": "other",
+            "mean_error": 16.924801587301587,
+            "series": 24
+          },
+          {
+            "kind": "date",
+            "method": "median_interval",
+            "direction": "debit",
+            "cadence": "monthly_candidate",
+            "mean_error": 4.492989720159909,
+            "series": 1751
+          },
+          {
+            "kind": "date",
+            "method": "median_interval",
+            "direction": "debit",
+            "cadence": "other",
+            "mean_error": 24.575141525141525,
+            "series": 1001
+          },
+          {
+            "kind": "date",
+            "method": "median_interval",
+            "direction": "debit",
+            "cadence": "weekly_candidate",
+            "mean_error": 28.606448412698413,
+            "series": 42
+          }
+        ],
+        "winners": {
+          "date": {
+            "kind": "date",
+            "method": "fixed_30",
+            "mean_error": 8.710258895086824,
+            "series": 3022,
+            "folds": 6122
+          },
+          "amount": {
+            "kind": "amount",
+            "method": "historical_median",
+            "mean_error": 0.08973728002291421,
+            "series": 3022,
+            "folds": 6122
+          }
+        },
+        "ties": {
+          "date": [
+            "fixed_30"
+          ],
+          "amount": [
+            "historical_median"
+          ]
+        },
+        "weighting": "mean within series, then mean across series",
+        "split": "expanding window; three prior dates minimum; strictly before request",
+        "amount_scale": "training median absolute amount"
+      },
+      "observations": [
+        "Lowest date error: fixed_30, 8.710 days across 3022 series and 6122 folds.",
+        "Lowest amount error: historical_median, 0.0897 normalized absolute error across 3022 series.",
+        "The benchmark contains 42,854 method/fold rows; missing target or unscalable amount folds are excluded. These are one-step historical results, not a 90-day safety evaluation."
+      ],
+      "implications": [
+        [
+          "STATISTICAL",
+          "Use the observed winners as baselines and inspect direction/cadence breakdowns; validate conservative tails and regime changes separately."
+        ],
+        [
+          "EDGE_CASE",
+          "Calendar months clip at month end; fixed-day and calendar-month recurrence are distinct. Ties are reported, not hidden."
+        ]
+      ]
+    },
+    "payment_options": {
+      "statistics": {
+        "offers": 719,
+        "installments": 469,
+        "intervals": {
+          "28": 165,
+          "31": 153,
+          "30": 151
+        },
+        "checks": {
+          "arithmetic_bad": 0,
+          "fee_bad": 0,
+          "after_deadline": 394,
+          "method_rejected": 310,
+          "above_installment_count_limit": 381
+        },
+        "installment_limit_screen": "number_of_payments > max_installment_months; count-based EDA screen, not final month-duration interpretation"
+      },
+      "observations": [
+        "Evaluation requests have 719 offers, including 469 installment offers using ['28', '30', '31']-day intervals.",
+        "Arithmetic discrepancies above 0.01 native units: 0 payment-total and 0 principal-plus-fee mismatches.",
+        "394 offers finish after the deadline; 310 use rejected methods; 381 fail the declared installment-count screen. These flags can overlap."
+      ],
+      "implications": [
+        [
+          "DETERMINISTIC",
+          "Calculate schedules with exact day intervals and validate fees, deadlines and preferences before cash simulation."
+        ],
+        [
+          "EDGE_CASE",
+          "The month-limit screen uses payment count; resolve duration interpretation explicitly before implementing final eligibility."
+        ]
+      ]
+    },
+    "message_triage": {
+      "statistics": {
+        "messages": 198,
+        "users": 198,
+        "topic_counts": {
+          "payroll": 117,
+          "amount_change": 44,
+          "unsettled_or_dispute": 35,
+          "unmatched": 31,
+          "cancellation_or_end": 19,
+          "timing_change": 15,
+          "transfer_or_multiple_accounts": 7
+        },
+        "patterns": {
+          "payroll": "salary|payroll|gaji|penggajian|employer|stipend",
+          "timing_change": "delay|revised|reschedul|later|replaces|ditunda|tertunda",
+          "amount_change": "increase|raise|reduc|renew|naik|berubah",
+          "cancellation_or_end": "cancel|ended|terminated|off-season|berakhir",
+          "unsettled_or_dispute": "pending|disput|investigat|not.*posted|awaiting|failed|retry|retried",
+          "transfer_or_multiple_accounts": "transfer|two.*accounts|separate.*accounts|two.*card"
+        },
+        "multi_topic": 58,
+        "after_request_day": 0,
+        "blank_event_links": 162,
+        "reviewed_images": {
+          "image_01": "payslip: earnings/deductions/net pay",
+          "image_03": "retail receipt: item lines/net/cash paid",
+          "image_09": "utility receipt: charge/due dates and received amount"
+        },
+        "image_review_scope": "three representative images across all supplied users; personal details not transcribed"
+      },
+      "observations": [
+        "198 evaluation-user messages cover 198/250 users; 162 lack a direct event link.",
+        "31 messages are unmatched by the provisional multilingual patterns; 58 match multiple topics, which does not itself prove conflict.",
+        "0 messages are dated after their request day; same-day availability cannot be resolved from a date-only request.",
+        "Three representative supplied images were visually inspected: a payslip, retail receipt, and utility receipt. EDA leaves all 11 evaluation-user missing amounts unresolved."
+      ],
+      "implications": [
+        [
+          "LLM_REQUIRED",
+          "Interpret amendments, effective dates and document-specific amounts with provenance; keyword triage is not fact extraction or proof of model necessity."
+        ],
+        [
+          "EDGE_CASE",
+          "Filter evidence by availability; request dates lack time-of-day precision. Never export raw personal document details."
+        ]
+      ]
+    },
+    "lifecycle": {
+      "statistics": {
+        "linked_rows": 52,
+        "users": 48,
+        "transitions": [
+          {
+            "previous_status": "cancelled",
+            "status": "settled",
+            "rows": 7
+          },
+          {
+            "previous_status": "failed",
+            "status": "scheduled",
+            "rows": 7
+          },
+          {
+            "previous_status": "settled",
+            "status": "pending",
+            "rows": 13
+          },
+          {
+            "previous_status": "settled",
+            "status": "settled",
+            "rows": 17
+          },
+          {
+            "previous_status": "settled",
+            "status": "unrealized",
+            "rows": 8
+          }
+        ]
+      },
+      "observations": [
+        "52 linked evaluation-user rows occur across 48 users (19.2%).",
+        "The links exhibit 5 status-transition combinations; transitions describe row relationships, not resolved duplicates or cash obligations."
+      ],
+      "implications": [
+        [
+          "DETERMINISTIC",
+          "Traverse lifecycle links and retain cash status rather than dropping all linked rows."
+        ],
+        [
+          "LLM_REQUIRED",
+          "Use evidence to distinguish cancellation, settlement, transfers and still-outstanding liabilities when structured rows are insufficient."
+        ]
+      ]
+    },
+    "fx_coverage": {
+      "statistics": {
+        "rate_rows": 134,
+        "duplicate_keys": 0,
+        "foreign_cash_rows": 134,
+        "missing_rate_rows": 0,
+        "missing_event_ids": []
+      },
+      "observations": [
+        "134 evaluation-user cash rows need conversion; 0 lack the exact dated directed rate.",
+        "The 134 supplied rates contain 0 duplicate date/pair keys; no inverse, nearest-date, or live-rate fallback is applied."
+      ],
+      "implications": [
+        [
+          "DETERMINISTIC",
+          "Use settlement-date directed rates; fail explicitly on unresolved required conversions rather than inventing rates."
+        ]
+      ]
+    },
+    "pending_debits": {
+      "statistics": {
+        "rows": 55,
+        "users": 55,
+        "incomplete_users": 1,
+        "ratio_quantiles": {
+          "0.5": 0.05085727705724895,
+          "0.9": 0.12167491236004449,
+          "1.0": 0.2065475575751317
+        },
+        "ratio_above_025": 0,
+        "nonpositive_headroom_users": 0
+      },
+      "observations": [
+        "55 pending debit rows affect 55 users; 1 users have incomplete amount/conversion evidence.",
+        "Among 54 complete positive-headroom users, median pending debit/headroom is 5.1%; 0 exceed 25%."
+      ],
+      "implications": [
+        [
+          "DETERMINISTIC",
+          "Reserve pending debits per user; keep unknown reserves explicit rather than treating missing amounts as zero."
+        ]
+      ]
+    },
+    "complexity": {
+      "statistics": {
+        "tiers": {
+          "evidence-heavy": 211,
+          "structured-complex": 35,
+          "simple": 4
+        },
+        "components": {
+          "irregular_recurrence": 237,
+          "restricted_methods": 227,
+          "messages": 198,
+          "pending_debit": 55,
+          "lifecycle": 48,
+          "foreign_currency": 26,
+          "images_or_missing": 11
+        },
+        "score_quantiles": {
+          "0.0": 1.0,
+          "0.5": 3.0,
+          "0.75": 4.0,
+          "1.0": 6.0
+        },
+        "sensitivity": [
+          {
+            "interval_iqr_threshold": 5,
+            "cv_threshold": 0.15,
+            "simple": 4,
+            "evidence_heavy": 211,
+            "structured_complex": 35,
+            "mean_score": 3.22
+          },
+          {
+            "interval_iqr_threshold": 7,
+            "cv_threshold": 0.25,
+            "simple": 4,
+            "evidence_heavy": 211,
+            "structured_complex": 35,
+            "mean_score": 3.208
+          },
+          {
+            "interval_iqr_threshold": 10,
+            "cv_threshold": 0.4,
+            "simple": 4,
+            "evidence_heavy": 211,
+            "structured_complex": 35,
+            "mean_score": 3.196
+          }
+        ],
+        "definitions": {
+          "score": "one point per listed boolean flag",
+          "simple": "no evidence flags and score <= 1",
+          "evidence-heavy": "message, image/missing amount, or lifecycle flag",
+          "structured-complex": "remaining requests",
+          "irregular": "interval IQR > 7 days OR amount CV > 0.25"
+        },
+        "highest_requests": [
+          {
+            "user_id": "user_64",
+            "messages": 1,
+            "images_or_missing": 1,
+            "lifecycle": 0,
+            "foreign_currency": 1,
+            "pending_debit": 1,
+            "restricted_methods": 1,
+            "irregular_recurrence": 1,
+            "score": 6,
+            "tier": "evidence-heavy",
+            "request_id": "request_64",
+            "event_count": 123
+          },
+          {
+            "user_id": "user_48",
+            "messages": 1,
+            "images_or_missing": 1,
+            "lifecycle": 0,
+            "foreign_currency": 1,
+            "pending_debit": 0,
+            "restricted_methods": 1,
+            "irregular_recurrence": 1,
+            "score": 5,
+            "tier": "evidence-heavy",
+            "request_id": "request_48",
+            "event_count": 129
+          },
+          {
+            "user_id": "user_141",
+            "messages": 1,
+            "images_or_missing": 0,
+            "lifecycle": 1,
+            "foreign_currency": 0,
+            "pending_debit": 1,
+            "restricted_methods": 1,
+            "irregular_recurrence": 1,
+            "score": 5,
+            "tier": "evidence-heavy",
+            "request_id": "request_141",
+            "event_count": 123
+          },
+          {
+            "user_id": "user_84",
+            "messages": 1,
+            "images_or_missing": 1,
+            "lifecycle": 0,
+            "foreign_currency": 1,
+            "pending_debit": 0,
+            "restricted_methods": 1,
+            "irregular_recurrence": 1,
+            "score": 5,
+            "tier": "evidence-heavy",
+            "request_id": "request_84",
+            "event_count": 123
+          },
+          {
+            "user_id": "user_113",
+            "messages": 1,
+            "images_or_missing": 1,
+            "lifecycle": 0,
+            "foreign_currency": 1,
+            "pending_debit": 0,
+            "restricted_methods": 1,
+            "irregular_recurrence": 1,
+            "score": 5,
+            "tier": "evidence-heavy",
+            "request_id": "request_113",
+            "event_count": 121
+          },
+          {
+            "user_id": "user_183",
+            "messages": 1,
+            "images_or_missing": 0,
+            "lifecycle": 0,
+            "foreign_currency": 1,
+            "pending_debit": 1,
+            "restricted_methods": 1,
+            "irregular_recurrence": 1,
+            "score": 5,
+            "tier": "evidence-heavy",
+            "request_id": "request_183",
+            "event_count": 121
+          },
+          {
+            "user_id": "user_214",
+            "messages": 1,
+            "images_or_missing": 0,
+            "lifecycle": 1,
+            "foreign_currency": 1,
+            "pending_debit": 0,
+            "restricted_methods": 1,
+            "irregular_recurrence": 1,
+            "score": 5,
+            "tier": "evidence-heavy",
+            "request_id": "request_214",
+            "event_count": 121
+          },
+          {
+            "user_id": "user_263",
+            "messages": 1,
+            "images_or_missing": 0,
+            "lifecycle": 0,
+            "foreign_currency": 1,
+            "pending_debit": 1,
+            "restricted_methods": 1,
+            "irregular_recurrence": 1,
+            "score": 5,
+            "tier": "evidence-heavy",
+            "request_id": "request_263",
+            "event_count": 121
+          },
+          {
+            "user_id": "user_78",
+            "messages": 0,
+            "images_or_missing": 1,
+            "lifecycle": 1,
+            "foreign_currency": 1,
+            "pending_debit": 0,
+            "restricted_methods": 1,
+            "irregular_recurrence": 1,
+            "score": 5,
+            "tier": "evidence-heavy",
+            "request_id": "request_78",
+            "event_count": 121
+          },
+          {
+            "user_id": "user_73",
+            "messages": 1,
+            "images_or_missing": 1,
+            "lifecycle": 1,
+            "foreign_currency": 0,
+            "pending_debit": 0,
+            "restricted_methods": 1,
+            "irregular_recurrence": 1,
+            "score": 5,
+            "tier": "evidence-heavy",
+            "request_id": "request_73",
+            "event_count": 110
+          }
+        ]
+      },
+      "observations": [
+        "Under the declared rule: 4 simple, 35 structured-complex, and 211 evidence-heavy evaluation requests.",
+        "Most prevalent score components: irregular_recurrence (237/250) and restricted_methods (227/250). These are score contributions, not independently validated difficulty predictors.",
+        "Across three irregularity thresholds, simple counts range 4\u20134; evidence-heavy counts remain fixed by definition."
+      ],
+      "implications": [
+        [
+          "DETERMINISTIC",
+          "Use explicit flags for routing and audit priorities, not an opaque model-based complexity label."
+        ],
+        [
+          "EDGE_CASE",
+          "Evidence-heavy denotes evidence presence, not proven ambiguity; score rankings need validation against actual implementation effort."
+        ]
+      ]
+    },
+    "complex_timeline": {
+      "statistics": {
+        "request_id": "request_64",
+        "user_id": "user_64",
+        "score": 6,
+        "events": 123,
+        "unplottable_amounts": 1
+      },
+      "observations": [
+        "request_64 has score 6/7 and 123 supplied events, selected by score, then event count, then request ID.",
+        "1 amounts cannot be plotted after exact-rate conversion; markers show cash-event records, not a reconstructed balance or recommended plan."
+      ],
+      "implications": [
+        [
+          "DETERMINISTIC",
+          "Build an auditable dated ledger before simulating balances; historical event plots must not be mistaken for current available cash."
+        ]
+      ]
+    }
+  },
+  "artifacts": [
+    "eda_outputs/tables/inventory.csv",
+    "eda_outputs/figures/01_request_types.png",
+    "eda_outputs/figures/02_amount_headroom.png",
+    "eda_outputs/tables/amounts_by_currency.csv",
+    "eda_outputs/figures/03_deadlines.png",
+    "eda_outputs/figures/04_preferences.png",
+    "eda_outputs/figures/05_status.png",
+    "eda_outputs/figures/06_event_types.png",
+    "eda_outputs/figures/07_event_counts.png",
+    "eda_outputs/figures/08_recurrence_intervals.png",
+    "eda_outputs/figures/09_amount_variability.png",
+    "eda_outputs/tables/recurrence_method_errors.csv",
+    "eda_outputs/figures/10_forecast_errors.png",
+    "eda_outputs/figures/11_payment_options.png",
+    "eda_outputs/tables/option_validation.csv",
+    "eda_outputs/tables/message_taxonomy.csv",
+    "eda_outputs/tables/lifecycle_transitions.csv",
+    "eda_outputs/tables/fx_missing.csv",
+    "eda_outputs/tables/pending_debit_reserves.csv",
+    "eda_outputs/tables/request_complexity.csv",
+    "eda_outputs/figures/12_complexity.png",
+    "eda_outputs/figures/13_complex_timeline.png",
+    "eda_outputs/tables/recurring_candidates.csv",
+    "eda_outputs/tables/recurrence_folds.csv",
+    "eda_outputs/tables/recurrence_error_breakdown.csv",
+    "eda_outputs/tables/message_topic_flags.csv",
+    "eda_outputs/eda_findings.md",
+    "plan/eda.ipynb"
+  ],
+  "architecture_conclusions": [
+    {
+      "question": "What can be handled completely deterministically?",
+      "answer": "Identifier joins, typed parsing, preference filters, exact FX lookups, cash-state rules, supplied option arithmetic/schedules, output validation and plan simulation once financial facts are normalized."
+    },
+    {
+      "question": "What requires statistical inference?",
+      "answer": "Cadence, variable essential spending, and recurrence amount estimation: 39.5% of candidate series have interval IQR above seven days."
+    },
+    {
+      "question": "What needs LLM or vision interpretation?",
+      "answer": "198 evaluation-user messages and image-backed amounts require semantic triage/interpretation. The three reviewed document types have different monetary fields. This EDA does not establish that an LLM outperforms rules/OCR; test that in later ablations."
+    },
+    {
+      "question": "What financial-event patterns are most common?",
+      "answer": "expense is the largest event type (18,677 rows); settled rows dominate. 64.7% of recurrence candidates have a monthly-range median gap."
+    },
+    {
+      "question": "What are the major outliers and edge cases?",
+      "answer": "Nonpositive headroom: 0 requests; missing exact FX: 0 foreign cash rows; linked lifecycle records: 52. Missing image amounts, failed-but-outstanding bills and conflicting dates remain explicit review cases."
+    },
+    {
+      "question": "Which recurrence heuristic performed best?",
+      "answer": "Date winner(s): fixed_30, MAE 8.710 days. Amount winner(s): historical_median, normalized error 0.0897. Equal-series one-step backtesting does not establish a universally safe forecast."
+    },
+    {
+      "question": "Which variables most strongly affect complexity?",
+      "answer": "The largest declared score components are irregular_recurrence (237 requests), restricted_methods (227 requests), messages (198 requests). This is definitional contribution, not causal importance or a validated difficulty model."
+    },
+    {
+      "question": "How many requests are simple versus evidence-heavy?",
+      "answer": "Simple: 4; evidence-heavy: 211; structured-complex: 35. Tiers are exhaustive and mutually exclusive under the published triage rule."
+    },
+    {
+      "question": "Which assumptions are dangerous to hardcode?",
+      "answer": "Every month is 30 days; all salary continues indefinitely; latest amount repeats; linked means duplicate; failed means no remaining liability; pending credit is available; blank equals zero; all users accept full payment; headroom equals safe capacity; every message is available at request time."
+    },
+    {
+      "question": "What should the final architecture contain?",
+      "answer": "Validated ingestion and provenance \u2192 evidence interpretation with uncertainty \u2192 lifecycle and cash-state reconciliation \u2192 statistical recurrence/essential-spending forecasts \u2192 deterministic 90-day simulator \u2192 eligible plan generation/ranking \u2192 independent invariant checks \u2192 grounded explanations, final output and usage reporting. Route evidence by explicit flags, and introduce an LLM only after measured rule/OCR failures."
+    }
+  ]
+}
